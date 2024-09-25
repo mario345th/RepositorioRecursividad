@@ -11,9 +11,13 @@ public class OperacionesMatematicas {
         }
     }
     
-    public static void main(String[] args) {
-        
-        OperacionesMatematicas o = new OperacionesMatematicas ();
-        System.out.println(o.factorial(5));
+    public int exponente (int base, int exp){
+        if(exp == 1 ){
+            return base;
+        } else if (exp == 0) {
+            return 1;
+        } else {
+            return base * exponente(base, exp -1);
+        }
     }
 }

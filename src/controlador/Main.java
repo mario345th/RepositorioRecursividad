@@ -15,6 +15,7 @@ public class Main {
         
         OperacionesMatematicas o = new OperacionesMatematicas ();
         System.out.println(o.factorial(5));
+        System.out.println(o.exponente(5, 3));
     }
 
 }
